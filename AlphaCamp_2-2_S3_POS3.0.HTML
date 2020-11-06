@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Users List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d876dc6bf5.js" crossorigin="anonymous"></script>
+  <style>
+  body {
+  padding: 25px;
+}
+  </style>
+
+</head>
+
+<body>
+ <!--  HTNL結構 -->
+<div class="container">
+    <h3>AC咖啡 點餐機</h3>
+  <!-- 1.菜單商品列表區塊（套用 bootstrap Grid 跟卡片）--）-->
+  <!--  用 Boostrap Grid 結構製作出卡片  -->
+    <div id="product-list" class="row"></div>
+  <!-- 2.顯示目前購物車清單（套用bootstrap list group） -->
+    <h4 class="my-3">購物車清單</h4> 
+    <div class="col-6">
+      <ul id="cart-item-list" class="list-group"></ul>
+    </div>
+    <h5 class="my-3">總金額：<span id="total-amount">--</span></h5>
+    <button id="clear-cart-button" type="button" class="btn btn-primary">清空購物車</button>
+  </div>
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="AlphaCamp_2-2_S3_POS3.0.js.js"></script>
+</body>
+
+</html>
